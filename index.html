@@ -42,8 +42,9 @@ src="http://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
             currentPage: 1,
             zoom: 1
         }
-     
-        pdfjsLib.getDocument('https://tmsinfo.adani.com/server/rest/services/DRP_Prod/hut_polygons/FeatureServer/4/4269/attachments/6684').then((pdf) => {
+     //pdfjsLib.getDocument('https://tmsinfo.adani.com/server/rest/services/DRP_Prod/hut_polygons/FeatureServer/4/4269/attachments/6684').then((pdf) => {
+	 
+        pdfjsLib.getDocument('plan.pdf').then((pdf) => {
      
             myState.pdf = pdf;
             render();
